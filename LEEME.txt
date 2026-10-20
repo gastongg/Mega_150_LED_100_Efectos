@@ -1,0 +1,25 @@
+LED AMBIENTAL - Arduino Mega 2560
+
+Archivo: LED_Ambiental_Mega.ino
+Hardware: 150 WS2812B, datos D6, boton D2 a GND.
+Biblioteca necesaria: FastLED (Administrador de bibliotecas del Arduino IDE).
+Serie: 115200 baudios.
+
+Comandos compatibles con LED_Control.py:
+GET
+NEXT
+PREV
+RANDOM
+RESTART
+SET 1 ... SET 384
+
+Para cargar:
+1. Abrir LED_Ambiental_Mega.ino en Arduino IDE.
+2. Seleccionar placa Arduino Mega 2560 y el puerto correcto.
+3. Instalar FastLED si no está instalada.
+4. Verificar y subir.
+5. Cerrar el Monitor Serie antes de abrir LED_Control.py.
+
+La intensidad máxima configurada es BRIGHTNESS 120/255.
+La tira debe tener alimentación de 5 V adecuada y GND común con el Mega.
+No alimentar 150 LED desde el pin 5V del Arduino.
